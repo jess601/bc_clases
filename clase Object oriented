@@ -12,4 +12,7 @@ class Dino:
     def set_patas (self, cantidad):
         self.patas = cantidad
 
+    def cortar_patas(self):
+        self.patas = self.patas - 1
+
 Pepito=dino(4, "Pepito")
