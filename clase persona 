@@ -1,0 +1,22 @@
+#al metodo no se le puede llamar antes de crear el objeto
+#
+
+class Persona:
+    nombre = None #estos son los atributos que se les da a un objeto
+    anhos= 18
+    def __init__(self, un_nombre,cumplir_anhos): #iniciar 
+        self.nombre = un_nombre
+        self.anhos=cumplir_anhos
+        print("Hola,", " me llamo", self.nombre, "y tengo", self.anhos, "anhos")
+
+    def get_anhos(self): #estos def son metodos
+        return self.anhos
+
+    def set_anhos(self, cantidad):
+        self.anhos = cantidad
+
+    def cumplir_anhos(self):
+        self.anhos = self.anhos + 1
+        return self.anhos
+
+persona1 = Persona("Jessica", 18)
